@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color:red;
+    text-shadow: 0 0 25px red,
+                 0 0 25px red;
+    transform: scale(1.1);
+}
+span{
+    color: red;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navber a.active{
+    color: red;
+    border-bottom: 3px soild red;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color:red;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color: white;
+}
+
+.home{
+    width: 100%;
+    min-height: 10vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 20vh 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+    
+}
+.btn{
+    padding: 15px 28px;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor:  pointer;
+    margin-bottom: 15px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* Style cho nền mờ */
+.blur-bg {
+    display: none; /* Ẩn nền mờ khi chưa kích hoạt popup */
+    position: fixed; /* Nền mờ cố định, phủ kín màn hình */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    z-index: 1; /* Đảm bảo nền mờ nằm dưới popup */
+}
+  /* Style cho cửa sổ popup */
+.modal-content {
+    display: none; /* Ẩn popup khi chưa kích hoạt */
+    position: fixed; /* Popup cố định, hiển thị ở giữa màn hình */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa popup */
+    width: 50%; /* Chiều rộng của popup */
+    padding: 20px; /* Đệm bên trong popup */
+    background: #fff; /* Màu nền của popup */
+    border-radius: 5px; /* Bo góc của popup */
+    z-index: 2; /* Đảm bảo popup nằm trên nền mờ */
+}
+  /* Style cho nút đóng popup */
+.close-modal {
+    float: right; /* Nút đóng nằm bên phải của tiêu đề */
+    font-size: 30px; /* Kích thước của nút đóng */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển vào nút đóng */
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 450px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px soid red;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px red, 0 0 10px red;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: red;
+    border: 2px soid red;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px soild red;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}

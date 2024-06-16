@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Hai</span>Nam</a>
+        <nav class="navbar">
+            <a href="#" class="active">About me</a>
+            <a href="#">Eduction</a>
+            <a class="nav-link" href="#" onclick="showSection('skills')">Skills</a>
+            </nav>
+        <a href="#" class="contact">Contact</a>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>I'm <span>Hai Nam<br></span>A beginer deverloper</h1>
+            <p>
+                My name is Hai Nam, i'm 18 and studing Information Technology in Hong Duc University.
+            </p>
+
+            <div class="bth-box">
+                <button id="open-modal" class="btn">More details</button>
+                <div id="blur-bg" class="blur-bg"></div>
+
+                <!-- Cửa sổ popup -->
+                <div id="modal-content" class="modal-content">
+                    <span id="close-modal" class="close-modal">&times;</span>
+                    <h2>Information in University</h2>
+                    <p>
+                        Full name: Đỗ Hải Nam<br>
+                        Birth: September 1 2005<br>
+                        Address: Quảng Thắng, Thanh Hóa<br><br>
+                        
+                        School: Hồng Đức University<br>
+                        ID: 2361030096<br>
+                        Major: Information Technology<br>
+                        Class: K26B - CNTT <br>
+                        Faculty: FICT<br>
+                    </p>
+                </div>
+
+                <script src="common.js"></script>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="img/950.gif" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#">
+                <i class='bx bxl-facebook-circle' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-youtube' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-discord' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-telegram' ></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
